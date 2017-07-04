@@ -38,7 +38,7 @@ namespace Hello_World
 
         static string UserName (string name)
          {
-            return $"Welcome {name}. Press 'h' for Help";
+            return $"Welcome {name}. Your name is beautiful";
          }
 
         static void Loop (int looping)
