@@ -8,7 +8,6 @@ namespace Hello_World
         static void Main()
         {
             EnterName();
-            Loop(5);
         }
 
         static void EnterName()
@@ -20,9 +19,7 @@ namespace Hello_World
                 string nameEntry = Console.ReadLine();
                 if (nameEntry.Length > 0)
                 {
-                    //Console.WriteLine($"Welcome {nameEntry}!");
                     Console.WriteLine(UserName(nameEntry));
-                    Loop(1);
                     Console.Read();
                 }
                 else
@@ -41,13 +38,5 @@ namespace Hello_World
          {
             return $"Welcome {name}. Hello World";
          }
-
-        static void Loop (int looping)
-        {
-            for (looping = 1; looping < 2 ; looping = 1)
-            {
-                //Console.WriteLine(looping);
-            }
-        }
     }
 }
