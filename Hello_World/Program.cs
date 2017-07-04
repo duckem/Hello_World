@@ -22,6 +22,7 @@ namespace Hello_World
                 {
                     //Console.WriteLine($"Welcome {nameEntry}!");
                     Console.WriteLine(UserName(nameEntry));
+                    Loop(1);
                     Console.Read();
                 }
                 else
@@ -38,14 +39,14 @@ namespace Hello_World
 
         static string UserName (string name)
          {
-            return $"Welcome {name}. Press 'h' for Help";
+            return $"Welcome {name}. Hello World";
          }
 
         static void Loop (int looping)
         {
-            for (looping = 1; looping < 11; looping++)
+            for (looping = 1; looping < 2 ; looping = 1)
             {
-                Console.WriteLine(looping);
+                //Console.WriteLine(looping);
             }
         }
     }
